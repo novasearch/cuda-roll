@@ -9,7 +9,7 @@ mirrorrepo:
 
 createroll:
 	/bin/rm -f ./$(DISTRO)-$(VERSION)-0.$(ARCH).disk1.iso
-	/bin/ln -sf ./developer.download.nvidia.com/compute/cuda/repos/rhel7/x86_64 ./RPMS
+	/bin/ln -sf ./developer.download.nvidia.com/compute/cuda/repos/rhel6/x86_64 ./RPMS
 	/opt/rocks/bin/rocks create roll roll-$(DISTRO).xml
 	/bin/rm -rf ./disk1
 
